@@ -2,6 +2,7 @@ import { render } from '@czechitas/render';
 import { Header } from "../components/Header/header"
 import { Intro } from "../components/Intro/intro";
 import { Pose } from "../components/Pose/pose";
+import image from "../img/yoga-pose.jpg"
 import '../global.css';
 import "./style.css"
 
@@ -16,6 +17,6 @@ document.querySelector(`#root`).innerHTML = render(
                 sobě i ostatním. Krok za krokem objevíte a dostanete pod kontrolu
                 svoje tělo, pocity a emoce.`}
         />
-        <Pose src="img/yoga-pose.jpg" />
+        <Pose src={image} />
     </div>
 )
